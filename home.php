@@ -12,7 +12,7 @@
 <body>
     <div class = "navigasi-kiri">
         <center>
-        <img src ="user.png"/>
+        <img src ="burger1.png"/>
 
         <span> Username : Ade Arya Ilham </span>
 

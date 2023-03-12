@@ -1,0 +1,9 @@
+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
+git remote set-url origin https://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@github.com/adearyailham/resto-web-app.git
+
+
+update dari local
+git add .
+
+git commit -m "pesan disini tulis"
+git push -u origin main

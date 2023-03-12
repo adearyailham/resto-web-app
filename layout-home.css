@@ -1,0 +1,49 @@
+body{
+    background: linear-gradient(to right,#F5F5DC, #5F9EA0);
+}
+
+.navigasi-kiri{
+    float: left;
+    width: 183px;
+    height: 100%;
+    background-color:	#5DA698;
+    padding: 18px;
+}
+.navigasi-atas{
+    float: left;
+    width: 85%;
+    height: 100px;
+    background-color:	#5DA698;
+}
+.navigasi-atas ul{
+    text-align: right;
+}
+
+.navigasi-atas li {
+    display: inline-block;
+    width: 112px;
+    height: 45px;
+    text-align: center;
+}
+.konten-tengah .menu{
+   width: 200px;
+   height: 100%;
+   border-style: solid;
+   display: table-cell;
+   padding: 15px;
+   text-align: center;
+}
+.menu:hover{
+    background-color: white;
+}
+.konten-tengah .formulir{
+    width: 50%;
+    padding: 20px;
+    border-style: solid;
+    display: inline-block;
+}
+.formulir span{
+    display: block;
+    width: 100px;
+    padding: 10px;
+}

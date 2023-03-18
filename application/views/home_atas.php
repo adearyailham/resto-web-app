@@ -5,22 +5,25 @@
 <html>
 
 <head>
-    <link rel = "stylesheet" href="layout-home.css" />
-    <title>Login System Resto</title>
+    <link rel = "stylesheet" href="/css/layout-home.css" />
+    <title>Formulir User System Resto</title>
 
 </head>
 <body>
     <div class = "navigasi-kiri">
         <center>
-        <img src ="user.png"/>
+        <img src ="/images/user.png"/>
 
         <span> Username : Ade Arya Ilham </span>
 
         <hr/>
-        <a href="management-order">Management Order</a>
+        <a href="management_order">Management Order</a>
 
         <hr/>
-        <a href="management-user">Management User </a>
+        <a href="management_user">Management User </a>
+
+        <hr/>
+        <a href="management_food">Management Food </a>
 
         <hr/>
         <a href="settings">Settings </a>
@@ -46,13 +49,13 @@
     <div class = "konten-tengah">
 
     <div class = "formulir">
-    <h1> Order </h1>
+    <h1> Registrasi </h1>
     <div> 
-        <span>Orderan : </span><input type="text" /> <br/>
-        <span>Jumlah : </span><input type="text" /> <br/>
-        <span>Harga :    </span><input type="text" /> <br/><br/>
+        <span>Username : </span><input type="text" /> <br/>
+        <span>Password : </span><input type="text" /> <br/>
+        <span>Email :    </span><input type="text" /> <br/><br/>
 
-        <input class = "tombol" type = "button" value="ORDER" />
+        <input class = "tombol" type = "button" value="REGISTER" />
     </div>
 </div>
    

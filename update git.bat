@@ -1,3 +1,3 @@
 git add .
-git commit -m "sudah masuk sistem"
+git commit -m "menambahkan managementfood dan formulir food"
 git push -u origin main

@@ -16,7 +16,7 @@ div input{
 }
 
 body {
-    background-image: url("resto-bg.jpg");
+    background-image: url("../images/resto-bg.jpg");
     height: 100%;
     background-size: cover;
     background-position: center;

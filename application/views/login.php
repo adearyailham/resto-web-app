@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <link rel = "stylesheet" href="layout.css" />
+    <link rel = "stylesheet" href="/css/layout.css" />
     <title>Login System Resto</title>
 
 </head>
@@ -15,7 +15,7 @@
     <div> 
         Username : <input type="text" /> <br/>
         Password : <input type="text" /> <br/>
-        <a href = "register.php"> Register now </a> <br/>
+        <a href = "/register/"> Register now </a> <br/>
         <input class = "tombol" type = "button" value="login" />
     </div>
     </center>

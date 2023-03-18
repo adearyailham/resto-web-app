@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <link rel = "stylesheet" href="layout.css" />
+    <link rel = "stylesheet" href="/css/layout.css" />
     <title>Login System Resto</title>
 
 </head>

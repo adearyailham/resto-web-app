@@ -17,16 +17,16 @@
         <span> Username : Ade Arya Ilham </span>
 
         <hr/>
-        <a href="management_order">Management Order</a>
+        <a href="/order/management">Management Order</a>
 
         <hr/>
-        <a href="management_user">Management User </a>
+        <a href="/user/management">Management User </a>
 
         <hr/>
-        <a href="management_food">Management Food </a>
+        <a href="/food/management">Management Food </a>
 
         <hr/>
-        <a href="settings">Settings </a>
+        <a href="/user/settings">Settings </a>
 
         <hr/>
         <a href="logout">Logout </a>

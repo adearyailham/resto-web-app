@@ -17,16 +17,16 @@
         <span> Username : Ade Arya Ilham </span>
 
         <hr/>
-        <a href="management-order">Management Order</a>
+        <a href="/order/management">Management Order</a>
 
         <hr/>
-        <a href="management-user">Management User </a>
+        <a href="/user/management">Management User </a>
 
         <hr/>
-        <a href="management-food">Management Food </a>
+        <a href="/food/management">Management Food </a>
 
         <hr/>
-        <a href="settings">Settings </a>
+        <a href="/user/settings">Settings </a>
 
         <hr/>
         <a href="logout">Logout </a>
@@ -48,7 +48,15 @@
     
     <div class = "konten-tengah">
         <h2>Settings</h2>
-   
+        <div> 
+        User Name : <input type="text" /> <br/>
+        password : <input type="text" /> <br/>
+        Email : <input type="text" /> <br/>
+        Address : <input type="text" /> <br/><br/>
+
+        Keep-login : <input type="checkbox" /><br/>
+
+        <input class = "tombol" type = "button" value="Save" />
     </div>
 
 </body>

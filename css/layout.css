@@ -1,8 +1,57 @@
-div{
+.welcome{
+    width:90%;
+    margin: auto;
+    padding: 15px;
+}
+.komputer{
+  margin-left: -73px !important;
+}
+.welcome h1{
+    color: black;
+    margin: 1px;
+}
+.Konten-promo{
+  width: 100%;
+  height: 200px;  
+  margin-bottom: 80px;
+
+}
+.bagian-kiri, .bagian-kanan{
+  width: 40%;
+  height: 190px;
+  float: left;
+}
+.bagian-kanan{
+  margin-left: -9px;
+}
+.bagian-kiri{
+  margin-left: 155px;
+}
+.bagian-kiri img{
+  height: 200px;
+  margin-left: 296px;  
+
+}
+.bagian-kanan p{
+  width: 363px;
+}
+.bagian-kanan img{
+  width: 79%;
+  height: 240px;
+
+}
+.konten-diskon p{
+  width: 326px;
+}
+.diskon{
+  margin-left: 343px;
+  width: 31%;
+}
+.login{
     background-color: white;
     border-style: solid;
     width: 250px;
-    padding: 20px;
+    padding: 25px;
 
     margin: auto;
     width: 20%
@@ -11,12 +60,12 @@ div input{
     width: 100%;
 }
 .tombol{
-    background-color: green;
+    background-color:#556B2F;
     color: white;
 }
 
 body {
-    background-image: url("../images/resto-bg.jpg");
+    background-color: #8FBC8F;
     height: 100%;
     background-size: cover;
     background-position: center;

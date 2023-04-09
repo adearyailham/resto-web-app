@@ -24,7 +24,13 @@
 
         <hr/>
         <a href="/food/management">Management Food </a>
+
+        <hr/>
+        <a href="/discount/management">Management Discount </a>
         
+        <hr/>
+        <a href="/drink/management">Management Drink </a>
+
         <hr/>
         <a href="/settings">Settings </a>
 
@@ -59,6 +65,15 @@
         <div class = "menu"><a href="food/add"><img src="/images/add-food.png"> </a>
         <p>Create New Food.</p>
         </div>
+
+        <div class = "menu"><a href="discount/add"><img src="/images/add-discount.png"> </a>
+        <p>Create Discount.</p>
+        </div>
+        
+        <div class = "menu"><a href="drink/add"><img src="/images/add-drink.png"> </a>
+        <p>Create New Food.</p>
+        </div>
+
         
         <div class = "menu"><a href="reporting.php"><img src="/images/reporting.png"> </a>
         <p>Reporting all data.</p>

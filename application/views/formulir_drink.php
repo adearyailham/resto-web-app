@@ -25,6 +25,9 @@
         <hr/>
         <a href="/food/management">Management Food </a>
         
+        <hr/>
+        <a href="/drink/management">Management Drink </a>
+        
 
         <hr/>
         <a href="/settings">Settings </a>
@@ -50,14 +53,14 @@
     <div class = "konten-tengah">
 
     <div class = "formulir">
-    <h1> Order </h1>
-    <form action="/order/submit" method="post"
+    <h1> Drink </h1>
+    <form action="/drink/submit" method="post">
     <div> 
         <span>Name : </span><input type="text" name="name" /> <br/>
-        <span>Quantity : </span><input type="text" name="quantity"/> <br/>
-        <span>Price :    </span><input type="text" name="price"/> <br/><br/>
+        <span>Price : </span><input type="text" name="price"/> <br/>
+        <span>Rating :    </span><input type="text" name="rating"/> <br/><br/>
 
-        <input class = "tombol" type = "submit" value="ORDER" />
+        <input class = "tombol" type = "submit" value="SAVE" />
     </div>
 </form>
 </div>

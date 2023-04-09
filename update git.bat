@@ -1,3 +1,3 @@
 git add .
-git commit -m "link sudah benar"
+git commit -m "bentar lagi jadi sistem"
 git push -u origin main

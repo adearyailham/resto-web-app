@@ -26,10 +26,10 @@
         <a href="/food/management">Management Food </a>
 
         <hr/>
-        <a href="/user/settings">Settings </a>
+        <a href="/settings">Settings </a>
 
         <hr/>
-        <a href="logout">Logout </a>
+        <a href="/logout">Logout </a>
 
         <hr/>
         </center>
@@ -49,14 +49,16 @@
     <div class = "konten-tengah">
 
     <div class = "formulir">
-    <h1> Registrasi </h1>
+    <h1> Food </h1>
+    <form action="/food/submit" method="post"
     <div> 
-        <span>Makanan : </span><input type="text" /> <br/>
-        <span>Harga : </span><input type="text" /> <br/>
-        <span>Rating :    </span><input type="text" /> <br/><br/>
+        <span>Name : </span><input type="text" name="name" /> <br/>
+        <span>Price : </span><input type="text" name="price"/> <br/>
+        <span>Rating :    </span><input type="text" name="rating"/> <br/><br/>
 
-        <input class = "tombol" type = "button" value="REGISTER" />
+        <input class = "tombol" type = "submit" value="SAVE" />
     </div>
+</form>
 </div>
    
     </div>

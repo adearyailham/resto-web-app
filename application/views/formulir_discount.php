@@ -6,7 +6,7 @@
 
 <head>
     <link rel = "stylesheet" href="/css/layout-home.css" />
-    <title>Login System Resto</title>
+    <title>Formulir discount</title>
 
 </head>
 <body>
@@ -24,7 +24,6 @@
 
         <hr/>
         <a href="/food/management">Management Food </a>
-        
 
         <hr/>
         <a href="/settings">Settings </a>
@@ -50,17 +49,16 @@
     <div class = "konten-tengah">
 
     <div class = "formulir">
-    <h1> Order </h1>
-    <form action="/order/submit" method="post"
+    <h1> Formulir Diskon </h1>
+    <form action="/discount/submit" method="POST">
     <div> 
-        <span>Name : </span><input type="text" name="name" /> <br/>
-        <span>Quantity : </span><input type="text" name="quantity"/> <br/>
-        <span>Price :    </span><input type="text" name="price"/> <br/><br/>
+        <span>nama_discount : </span><input type="text" name="nama_discount" /> <br/>
+        <span>jumlah_potongan :    </span><input type="text" name="jumlah_potongan"/> <br/><br/>
 
-        <input class = "tombol" type = "submit" value="ORDER" />
+        <input class = "tombol" type = "submit" value="SAVE" />
     </div>
-</form>
-</div>
+    </form>
+    </div>
    
     </div>
 

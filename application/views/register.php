@@ -12,14 +12,17 @@
 <body>
     <center>
     <h1> Registrasi </h1>
+    <form action="/register/submit" method="post">
     <div> 
-        Name : <input type="text" /> <br/>
-        Username : <input type="text" /> <br/>
-        Password : <input type="text" /> <br/>
-        Re-Password : <input type="text" /> <br/><br/>
+        Full Name : <input type="text" name="fullname"/> <br/>
+        Username : <input type="text" name="username" /> <br/>
+        Email : <input type="text" name="email"/> <br/>
+        Password : <input type="text" name="pass"/> <br/>
+        Re-Password : <input type="text"/> <br/><br/>
 
-        <input class = "tombol" type = "button" value="REGISTER" />
+        <input class = "tombol" type = "submit" value="REGISTER" />
     </div>
+    </form>
     </center>
 </body>
 </html>

@@ -57,3 +57,45 @@ body{
     width: 100px;
     display: inline-block;
 }
+
+.wadah-aksi, .wadah-judul{
+    display: inline-block;
+}
+
+.wadah-aksi{
+    margin-left: 63%;
+}
+.wadah-judul{
+    margin-left: 20px;
+}
+.wadah-aksi a{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 12px;
+}
+.wadah-aksi{
+    border: groove;
+    border-radius: 25px;
+    padding: 8px;
+}
+
+.wadah-utama-kanan{
+    border: groove;
+    float: right;
+    height: 100%;
+    width: 83%;
+    border-radius: 15px;
+}
+.wadah-data table{
+    border: groove;
+    padding: 10px;
+    width: 100%;
+    
+}
+.wadah-data td, .wadah-data th {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 17%;
+    text-align: center;
+}

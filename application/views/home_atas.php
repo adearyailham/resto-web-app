@@ -26,10 +26,10 @@
         <a href="/food/management">Management Food </a>
 
         <hr/>
-        <a href="/user/settings">Settings </a>
+        <a href="/settings">Settings </a>
 
         <hr/>
-        <a href="logout">Logout </a>
+        <a href="/logout">Logout </a>
 
         <hr/>
         </center>

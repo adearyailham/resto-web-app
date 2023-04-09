@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <link rel = "stylesheet" href="/css/layout-home.css" />
+    <link rel = "stylesheet" href="/css/layout-management.css" />
     <title>Management User System Resto</title>
 
 </head>
@@ -26,29 +26,60 @@
         <a href="/food/management">Management Food </a>
 
         <hr/>
-        <a href="/user/settings">Settings </a>
+        <a href="/settings">Settings </a>
 
         <hr/>
-        <a href="logout">Logout </a>
+        <a href="/logout">Logout </a>
 
         <hr/>
         </center>
     </div>
 
+    <div class= "wadah-utama-kanan"> 
 
-    <div class = "navigasi-atas">
-    <ul>
-        <li>Home</li>
-        <li>Berita</li>
-        <li>Tutorial</li>
-        <li>Download</li>
-        <li>Kontak</li>
-    </ul>
+        <div class="wadah-utama-atas">
+            <div class= "wadah-judul"> <h2>Management User</h2> </div>  
+            <div class= "wadah-aksi"> 
+                <a href="/user/add"> Add </a> |
+                <a href="/user/edit"> Edit </a> |
+                <a href= "/user/delete"> Delete </a> 
+            </div>
+
+        </div>
+
+        <div class= "wadah-data"> 
+
+        <table>
+            <tr> <th>#</th> 
+                 <th> username </th>    
+                 <th> password </th> 
+                 <th> email </th> 
+                 <th> address </th> 
+            </tr>
+          
+
+            <?php
+            $data = $query;
+            foreach($query as $row){
+                echo "<tr>";
+              
+                    echo "<td>" . ($row['id']) . "</td>";
+                    echo "<td>" . ($row['username']) . "</td>";
+                    echo "<td>" . ($row['pass']) . "</td>";
+                    echo "<td>" . ($row['email']) . "</td>";
+                    echo "<td>" . ($row['address']) . "</td>";
+                        
+            echo "</tr>";
+
+               
+            }
+            ?>
+
+        </table>
+
+        </div>
     </div>
-        <h2>management user</h2>
+
     
-   
-    </div>
-
 </body>
 </html>

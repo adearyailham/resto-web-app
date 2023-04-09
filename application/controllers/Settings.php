@@ -8,5 +8,12 @@ class Settings extends CI_Controller {
 	{
 		$this->load->view('settings');
 	}
+	public function submit(){
+		//kita mulai panggil model tadi
+		// yang siyap interaksi ke dbuser
+		$this->load->model('DBSettings');
+
+		$this->DBSettings->add();
+	}
 
 }

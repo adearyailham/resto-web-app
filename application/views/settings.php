@@ -26,10 +26,10 @@
         <a href="/food/management">Management Food </a>
 
         <hr/>
-        <a href="/user/settings">Settings </a>
+        <a href="/settings">Settings </a>
 
         <hr/>
-        <a href="logout">Logout </a>
+        <a href="/logout">Logout </a>
 
         <hr/>
         </center>
@@ -48,15 +48,19 @@
     
     <div class = "konten-tengah">
         <h2>Settings</h2>
-        <div> 
-        User Name : <input type="text" /> <br/>
-        password : <input type="text" /> <br/>
-        Email : <input type="text" /> <br/>
-        Address : <input type="text" /> <br/><br/>
+        <form action="/settings/submit" method="POST">
+        <div class = "formulir-settings"> 
+        <span>User Name :  </span>  <input type="text" name="username"/> <br/>
+        <span>password :   </span>  <input type="text"  name="password"/> <br/>
+        <span>Email :      </span>  <input type="text"  name="email"/> <br/>
+        <span>Address :    </span>  <input type="text"  name="address"/> <br/><br/>
 
-        Keep-login : <input type="checkbox" /><br/>
+        <span>Keep-login : </span> <input type="checkbox" /><br/>
 
-        <input class = "tombol" type = "button" value="Save" />
+        <input class = "tombol" type = "submit" value="Save" />
+        </div>
+</form>
+
     </div>
 
 </body>

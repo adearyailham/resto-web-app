@@ -5,7 +5,7 @@
 <html>
 
 <head>
-    <link rel = "stylesheet" href="/css/layout-home.css" />
+    <link rel = "stylesheet" href="/css/layout-management.css" />
     <title>Management_food System Resto</title>
 
 </head>
@@ -26,29 +26,59 @@
         <a href="/food/management">Management Food </a>
 
         <hr/>
-        <a href="/user/settings">Settings </a>
+        <a href="/settings">Settings </a>
 
         <hr/>
-        <a href="logout">Logout </a>
+        <a href="/logout">Logout </a>
 
         <hr/>
         </center>
     </div>
 
 
-    <div class = "navigasi-atas">
-    <ul>
-        <li>Home</li>
-        <li>Berita</li>
-        <li>Tutorial</li>
-        <li>Download</li>
-        <li>Kontak</li>
-    </ul>
+    <div class= "wadah-utama-kanan"> 
+
+        <div class="wadah-utama-atas">
+            <div class= "wadah-judul"> <h2>Management Food</h2> </div>  
+            <div class= "wadah-aksi"> 
+                <a href="/food/add"> Add </a> |
+                <a href="/food/edit"> Edit </a> |
+                <a href= "/fodd/delete"> Delete </a> 
+            </div>
+
+        </div>
+
+        <div class= "wadah-data"> 
+
+        <table>
+            <tr> <th>#</th> 
+                 <th> name </th>    
+                 <th> price </th> 
+                 <th> rating </th> 
+            </tr>
+          
+
+            <?php
+            $data = $query;
+            foreach($query as $row){
+                echo "<tr>";
+              
+                    echo "<td>" . ($row['id']) . "</td>";
+                    echo "<td>" . ($row['name']) . "</td>";
+                    echo "<td>" . ($row['price']) . "</td>";
+                    echo "<td>" . ($row['rating']) . "</td>";
+                        
+            echo "</tr>";
+
+               
+            }
+            ?>
+
+        </table>
+
+        </div>
     </div>
-    
-    <div class = "konten-tengah">
-        <h2>management_food</h2>
-    </div>
+
 
 </body>
 </html>

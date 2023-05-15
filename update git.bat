@@ -1,3 +1,3 @@
 git add .
-git commit -m "bentar lagi jadi sistem"
+git commit -m "sudah lumahan"
 git push -u origin main

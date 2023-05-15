@@ -6,7 +6,7 @@
 
 <head>
     <link rel = "stylesheet" href="/css/layout-management.css" />
-    <title>Management_food System Resto</title>
+    <title>Management User System Resto</title>
 
 </head>
 <body>
@@ -14,15 +14,14 @@
         $this->load->view('_template_navigasi');
     ?>
 
-
     <div class= "wadah-utama-kanan"> 
 
         <div class="wadah-utama-atas">
-            <div class= "wadah-judul"> <a href = "/home"><img class = "link_home" src="/images/home.png" alt=""></a> <h2>Management Food</h2>  
+            <div class= "wadah-judul"> <a href = "/home"><img class = "link_home" src="/images/home.png" alt=""></a> <h2>Management Discount</h2> </div>  
             <div class= "wadah-aksi"> 
-                <a href="/food/add"> Add </a> |
-                <a href="/food/edit"> Edit </a> |
-                <a href= "/fodd/delete"> Delete </a> 
+                <a href="/discount/add"> Add </a> |
+                <a href="/discount/edit"> Edit </a> |
+                <a href= "/discount/delete"> Delete </a> 
             </div>
 
         </div>
@@ -31,9 +30,8 @@
 
         <table>
             <tr> <th>#</th> 
-                 <th> name </th>    
-                 <th> price </th> 
-                 <th> rating </th> 
+                 <th> nama_discount </th>    
+                 <th> jumlah_potongan </th> 
             </tr>
           
 
@@ -43,9 +41,8 @@
                 echo "<tr>";
               
                     echo "<td>" . ($row['id']) . "</td>";
-                    echo "<td>" . ($row['name']) . "</td>";
-                    echo "<td>" . ($row['price']) . "</td>";
-                    echo "<td>" . ($row['rating']) . "</td>";
+                    echo "<td>" . ($row['nama_discount']) . "</td>";
+                    echo "<td>" . ($row['jumlah_potongan']) . "</td>";
                         
             echo "</tr>";
 
@@ -58,6 +55,6 @@
         </div>
     </div>
 
-
+    
 </body>
 </html>

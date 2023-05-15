@@ -10,7 +10,14 @@ class Discount extends CI_Controller {
 	}
 	public function management()
 	{
-		$this->load->view('management_discount');
+		$this->load->model('DBDiscount');
+		$keterimaData = $this->DBDiscount->select();
+
+		$data= array(
+			'query' => $keterimaData
+		);
+
+		$this->load->view('management_discount', $data);
 	}
 	public function submit(){
 		//kita mulai panggil model tadi
@@ -20,8 +27,7 @@ class Discount extends CI_Controller {
 		$this->DBDiscount->add();
 
 			//buat efek loading
-			echo "<img src='/images/loading.gif'>";
-			echo "wait...";
-			header("refresh:5; url=/home");
+			header("refresh:5; url=/discount/management");
+			$this->load->view('loading');
 	}
 }

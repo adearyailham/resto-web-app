@@ -44,5 +44,16 @@ class User extends CI_Controller {
 
 		echo var_dump($keterimaData);
 	}
+	public function delete(){
+		$idna = $this->input->get('id');
+		$this->load->model('DBUser');
+
+		$this->DBUser->delete($idna);
+
+		//buat efek loading
+		header("refresh:5; url=/user/management");
+		$this->load->view('loading');
+
+	}
 
 }

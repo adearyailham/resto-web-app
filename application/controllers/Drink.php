@@ -10,7 +10,14 @@ class Drink extends CI_Controller {
 	}
 	public function management()
 	{
-		$this->load->view('management_drink');
+		$this->load->model('DBDrink');
+		$keterimaData = $this->DBDrink->select();
+
+		$data= array(
+			'query' => $keterimaData
+		);
+
+		$this->load->view('management_drink', $data);
 	}
 	public function submit(){
 		//kita mulai panggil model tadi
@@ -21,8 +28,7 @@ class Drink extends CI_Controller {
 
 
 			//buat efek loading
-			echo "<img src='/images/loading.gif'>";
-			echo "wait...";
-			header("refresh:5; url=/home");
+			header("refresh:5; url=/drink/management");
+			$this->load->view('loading');
 	}
 }

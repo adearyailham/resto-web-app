@@ -6,7 +6,7 @@
 
 <head>
     <link rel = "stylesheet" href="/css/layout-management.css" />
-    <title>Management_food System Resto</title>
+    <title>Management User System Resto</title>
 
 </head>
 <body>
@@ -14,15 +14,14 @@
         $this->load->view('_template_navigasi');
     ?>
 
-
     <div class= "wadah-utama-kanan"> 
 
         <div class="wadah-utama-atas">
-            <div class= "wadah-judul"> <a href = "/home"><img class = "link_home" src="/images/home.png" alt=""></a> <h2>Management Food</h2>  
+            <div class= "wadah-judul"> <a href = "/home"><img class = "link_home" src="/images/home.png" alt=""></a> <h2>Management Drink</h2>
             <div class= "wadah-aksi"> 
-                <a href="/food/add"> Add </a> |
-                <a href="/food/edit"> Edit </a> |
-                <a href= "/fodd/delete"> Delete </a> 
+                <a href="/drink/add"> Add </a> |
+                <a href="/drink/edit"> Edit </a> |
+                <a href= "/drink/delete"> Delete </a> 
             </div>
 
         </div>
@@ -58,6 +57,6 @@
         </div>
     </div>
 
-
+    
 </body>
 </html>

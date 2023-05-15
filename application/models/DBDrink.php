@@ -45,6 +45,20 @@ class DBDrink extends CI_Model {
 	}
 	public function select()
 	{
+		$dataSemua = array();
 		$query = $this->db->get('table_drink');	
+		
+		$hasil = $query->result();
+		foreach($hasil as $col){
+			$data = array(
+				'id'		=>$col->id,
+				'name'		=>$col->name,
+				'price'		=>$col->price,
+				'rating'	=>$col->rating
+
+			);
+			$dataSemua[] = $data;
+		}
+		return $dataSemua;
 	}
 }

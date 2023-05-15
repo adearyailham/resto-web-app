@@ -41,6 +41,19 @@ class DBDiscount extends CI_Model {
 	}
 	public function select()
 	{
+		$dataSemua = array();
 		$query = $this->db->get('table_discount');	
+		
+		$hasil = $query->result();
+		foreach($hasil as $col){
+			$data = array(
+				'id'				=>$col->id,
+				'nama_discount'		=>$col->nama_discount,
+				'jumlah_potongan'	=>$col->jumlah_potongan
+
+			);
+			$dataSemua[] = $data;
+		}
+		return $dataSemua;
 	}
 }

@@ -36,13 +36,13 @@ class DBUser extends CI_Model {
 
 		$this->db->update('table_user', $this, $patokan);
 	}
-	public function delete()
+	public function delete($id)
 	{
 		$patokan = array(
-			'id' => $_POST['id']
+			'id' => $id
 		);
 
-		$this->db->delete('table_user', $this, $patokan);
+		$this->db->delete('table_user', $patokan);
 	}
 	public function select()
 	{

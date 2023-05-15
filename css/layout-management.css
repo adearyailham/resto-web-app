@@ -99,3 +99,20 @@ body{
     width: 17%;
     text-align: center;
 }
+.link_home{
+    width: 34px;
+    height: 34px;
+    display: inline-block;
+}
+.wadah-judul h2{
+    display: inline-block;
+    margin-left: 6px;
+}
+.navigasi-kiri a:hover{
+    background-color: white;
+}
+.navigasi-kiri a {
+    width: -22px;
+    height: 20px;
+    display: block;
+}

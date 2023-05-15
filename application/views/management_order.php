@@ -10,35 +10,14 @@
 
 </head>
 <body>
-    <div class = "navigasi-kiri">
-        <center>
-        <img src ="/images/user.png"/>
-
-        <span> Username : Ade Arya Ilham </span>
-
-        <hr/>
-        <a href="/order/management">Management Order</a>
-
-        <hr/>
-        <a href="/user/management">Management User </a>
-
-        <hr/>
-        <a href="/food/management">Management Food </a>
-
-        <hr/>
-        <a href="/settings">Settings </a>
-
-        <hr/>
-        <a href="/logout">Logout </a>
-
-        <hr/>
-        </center>
-    </div>
-
+    <?php
+        $this->load->view('_template_navigasi');
+    ?>
+    
     <div class= "wadah-utama-kanan"> 
 
 <div class="wadah-utama-atas">
-    <div class= "wadah-judul"> <h2>Management Orderr</h2> </div>  
+    <div class= "wadah-judul"> <a href = "/home"><img class = "link_home" src="/images/home.png" alt=""></a> <h2>Management Order</h2>  
     <div class= "wadah-aksi"> 
         <a href="/order/add"> Add </a> |
         <a href="/order/edit"> Edit </a> |
